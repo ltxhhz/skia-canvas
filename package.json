@@ -1,17 +1,17 @@
 {
-  "name": "skia-canvas",
+  "name": "@ltxhhz/skia-canvas-for-koishi",
   "version": "1.0.1",
   "description": "A GPU-accelerated Canvas Graphics API for Node",
   "author": "Christian Swinehart <drafting@samizdat.co>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/samizdatco/skia-canvas.git"
+    "url": "git+https://github.com/ltxhhz/skia-canvas.git"
   },
   "bugs": {
-    "url": "https://github.com/samizdatco/skia-canvas/issues"
+    "url": "https://github.com/ltxhhz/skia-canvas/issues"
   },
-  "homepage": "https://github.com/samizdatco/skia-canvas#readme",
+  "homepage": "https://github.com/ltxhhz/skia-canvas#readme",
   "main": "lib",
   "browser": {
     "lib": "./lib/browser.js",
@@ -22,7 +22,8 @@
     "install": "node-pre-gyp install || npm run build -- --release",
     "package": "node-pre-gyp package",
     "upload": "node-pre-gyp publish",
-    "test": "jest"
+    "test": "jest",
+    "publish": "npm publish --access public"
   },
   "dependencies": {
     "@mapbox/node-pre-gyp": "^1.0.9",
@@ -45,16 +46,6 @@
   "files": [
     "lib"
   ],
-  "binary": {
-    "module_name": "index",
-    "module_path": "./lib/v{napi_build_version}",
-    "remote_path": "./v{version}",
-    "package_name": "{platform}-{arch}-{node_napi_label}-{libc}.tar.gz",
-    "host": "https://skia-canvas.s3.us-east-1.amazonaws.com",
-    "napi_versions": [
-      6
-    ]
-  },
   "keywords": [
     "canvas",
     "gpu",
