@@ -1,6 +1,6 @@
 {
   "name": "@ltxhhz/skia-canvas-for-koishi",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "A GPU-accelerated Canvas Graphics API for Node",
   "author": "Christian Swinehart <drafting@samizdat.co>",
   "license": "MIT",
